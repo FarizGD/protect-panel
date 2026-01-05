@@ -2,10 +2,11 @@
 
 set -e
 
+BASE_URL="https://raw.githubusercontent.com/FarizGD/protect-panel/refs/heads/main"
+
 for i in {1..11}; do
-  echo "Menjalankan bash $i.sh"
-  echo "Protect panel by FarizGD"
-  bash "$i.sh"
+  echo "Menjalankan $i.sh dari GitHub..."
+  curl -fsSL "$BASE_URL/$i.sh" | bash
 done
 
-echo "Semua script 1.sh sampai 11.sh sudah selesai."
+echo "Protect by FarizGD."
